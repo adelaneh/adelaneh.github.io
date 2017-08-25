@@ -15,7 +15,7 @@
     <link href="../css/fontsheet.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <nav class="navbar navbar-fixed-top" role="navigation">
+<!--    <nav class="navbar navbar-fixed-top" role="navigation">
       <div class="container">
         <a class="navbar-brand" href="http://cs.wisc.edu/~adel">Adel@UW-Madison</a>
         <div class="navbar-header">
@@ -27,12 +27,12 @@
           </button>
         </div>
       </div>
-    </nav>
+</nav> -->
     <div class="container">
       <div class="title-center">
         <div class="row">
           <div class="col-sm-offset-2 col-sm-8">
-            <h3>CS 564: Database Management Systems (Fall 2017)</h3>
+            <h1>CS 564: Database Management Systems (Fall 2017)</h1>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
              The other half of the course will concentrate on the implementation of relational database management systems. Topics to be covered include file organizations, access methods (e.g., ISAM, B+ trees, linear and extendible hashing), external sorting techniques, the implementation of relational database operations, and the basic concepts of query optimization. Concurrency control, recovery, and other advanced implementation issues will also be touched upon as time allows.
              Although this is a two-part course, the presentation of the two parts will be interleaved in order to spread the course's programming work out as smoothly as possible over the whole semester.
             </p>
-            <p><b>Prerequisites</b>: A course in linear algebra and previous exposure to statistics and probability theory. Homeworks and project will require programming ability in Python, Matlab, or R.
+            <p><b>Prerequisites</b>:CS 367 is absolutely essential. You should know or be willing to learn C++, in order to do the project.
             </p>
           </div>
         </div>
@@ -57,342 +57,371 @@
       <div class="row">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">Schedule (Tentative)</h3><a name="schedule"></a>
+            <h3 class="panel-title">Schedule</h3><a name="schedule"></a>
           </div>
           <div class="panel-body">
             <table class="table">
               <thead>
-                <tr><th class="col-md-1">#</th><th class="col-md-1">Date</th><th class="col-md-2">Topic</th><th class="col-md-4">References</th><th class="col-md-3">Assignments</th></tr>
+                <tr><th class="col-md-1">#</th><th class="col-md-1">Date</th><th class="col-md-3">Topic</th><th class="col-md-3">Materials</th><th class="col-md-1">References</th><th class="col-md-4">Assignments</th></tr>
               </thead>
               <tbody>
                 <tr>
-                  <td align="center" colspan="6" class="plan-sec-header">Introduction</td>
+                  <td align="center" colspan="6" class="plan-sec-header">Introduction and Overview</td>
                 </tr>
                 <tr>
                   <td>1</td>
-                  <td>8/23</td>
-                  <td class="side-borders">Overview &amp; Course Logistics</td>
+                  <td>1/10</td>
+                  <td class="side-borders">Course Logistics</td>
                   <td class="side-borders">
-                    <ul>
-                      <li>Chapter 1 (Hastie et al.)</li>
-                      <li><a href="http://www.cs.ubc.ca/~murphyk/MLbook/pml-intro-22may12.pdf">Chapter 1 (Murphy)</a></li>
-                    </ul>
+                    <a href="slide/1-intro.pdf">Lecture 1</a>
                   </td>
-                  <td>
-                    <ul>
-                      <li>Homework 0 (due 8/27)</li>
-                    </ul>
-                  </td>
+                  <td class="side-borders">Chapter 1</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>8/29</td>
-                  <td class="side-borders">Crash Course in Optimization and Statistics</td>
+                  <td>1/12</td>
+                  <td class="side-borders">Database Concepts</td>
                   <td class="side-borders">
-                    <ul>
-                      <li>Convex optimization notes <a href="../cs534_s17/note/cs229-cvxopt.pdf">Part I</a> and  <a href="../cs534_s17/note/cs229-cvxopt2.pdf">II</a> from Stanford's machine learning class</li>
-                      <li>Rosenberg's <a href="https://davidrosenberg.github.io/mlcourse/Notes/convex-optimization.pdf">abridged notes</a></li>
-                    </ul>
+                    <a href="slide/2-db-concepts.pdf">Lecture 2</a>
                   </td>
+                  <td class="side-borders">Chapter 2</td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td align="center" colspan="6" class="plan-sec-header">Supervised Learning I</td>
+                  <td align="center" colspan="6" class="plan-sec-header">Data Modeling and Design</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>8/31</td>
-                  <td class="side-borders" rowspan="2">Linear Regression</td>
-                  <td class="side-borders" rowspan="2">
+                  <td>1/17</td>
+                  <td class="side-borders">ER Model</td>
+                  <td class="side-borders"><a href="slide/3-er.pdf">Lecture 3</a></td>
+                  <td class="side-borders">Chapter 3</td>
+                  <td>
                     <ul>
-                      <li>Chapter 3.1 - 3.4 (Hastie et al.)</li>
-                      <li>Chapter 17.1 - 17.2 <a href="http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/171216.pdf">(Barber)</a></li>
-                      <li><a href="http://faculty.mccombs.utexas.edu/carlos.carvalho/teaching/Section4.pdf">Prof. Carlos Carvalho MLR Slides</a></li>
+                      <li><a href="assignment/homework-0.pdf">Homework 0</a></li>
+                      <li><a href="assignment/homework-1.pdf">Homework 1</a></li>
                     </ul>
                   </td>
-                  <td></td>
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>9/5</td>
+                  <td>1/19</td>
+                  <td class="side-borders">Relational Model</td>
+                  <td class="side-borders"><a href="slide/4-rel-model.pdf">Lecture 4</a></td>
+                  <td class="side-borders">Chapters 5, 9</td>
                   <td></td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="6" class="plan-sec-header">Query Languages</td>
                 </tr>
                 <tr>
                   <td>5</td>
-                  <td>9/7</td>
-                  <td class="side-borders" rowspan="2">Naive Bayes &amp; Linear Classification</td>
-                  <td class="side-borders" rowspan="2">
-                    <ul>
-                      <li>Chapter 2.1 - 2.4 (Hastie et al.)</li>
-                      <li>Chapter 4.1 - 4.4 (Hastie et al.)</li>
-                      <li>Chapter 3.2 - 3.5 (<a href="https://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf">Mitchell</a>) </li>
-                    </ul>
-                  </td>
-                  <td>
-                    <ul>
-                      <li>Homework 1 (due 9/22)</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>9/12</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td align="center" colspan="6" class="plan-sec-header">Model Assessment &amp; Selection</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>9/14</td>
-                  <td class="side-borders">Bias &amp; Variance Tradeoff</td>
-                  <td class="side-borders" rowspan="4">
-                    <ul>
-                      <li>Chapters 7, 8 (Hastie et al.)</li>
-                    </ul>
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>9/19</td>
-                  <td class="side-borders">Model Assessment</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>9/21</td>
-                  <td class="side-borders" rowspan="2">Bootstrap &amp; Model Selection</td>
-                  <td>
-                    <ul>
-                      <li>Homework 2 (due 10/6)</li>
-                    </ul>
-                  </td>
-                </td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>9/26</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td align="center" colspan="6" class="plan-sec-header">Supervised Learning II</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>9/28</td>
-                <td class="side-borders" rowspan="2">Boosting, Trees &amp; Additive Models</a></td>
-                <td class="side-borders" rowspan="2">
-                  <ul>
-                    <li>Chapters 9, 10 (Hastie et al.)</li>
-                    <li>Chapter 3 (<a href="http://www.cs.princeton.edu/courses/archive/spr07/cos424/papers/mitchell-dectrees.pdf">Mitchell</a>)</li>
-                    <li>Cynthia Rudin's <a href="https://ocw.mit.edu/courses/sloan-school-of-management/15-097-prediction-machine-learning-and-statistics-spring-2012/lecture-notes/MIT15_097S12_lec08.pdf">notes</a> on decision trees</li>
-                  </ul>
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>10/3</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>13</td>
-                <td>10/5</td>
-                <td class="side-borders">Ensembles &amp; Random Forests</td>
-                <td class="side-borders">
-                  <ul>
-                    <li>Chapters 15, 16 (Hastie et al.)</li>
-                    <li>Breiman's <a href="http://dl.acm.org/citation.cfm?id=570182">paper</a> on random forests</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Homework 3 (due 10/20)</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td>14</td>
-                <td>10/12</td>
-                <td class="side-borders" rowspan="2">Support Vector Machines</td>
-                <td class="side-borders" rowspan="2">
-                  <ul>
-                    <li>Chapter 12 (Hastie et al.)</li>
-                    <li>Chapter 15 <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/index.html">(Shalev-Shwartz &amp; Ben-David)</a></li>
-                    <li><a href="http://cs229.stanford.edu/notes/cs229-notes3.pdf">SVM notes</a> from Stanford's ML class</li>
-                    <li><a href="https://davidrosenberg.github.io/ml2015/docs/svm-notes.pdf">SVM notes</a> from NYU's ML class</li>
-                    <li>Chapter 11 (<a href="http://ciml.info/">Daume</a>)</li>
-                  </ul>
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td>10/17</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>16</td>
-                <td>10/19</td>
-                <td class="side-borders" rowspan="2">Neural Networks</td>
-                <td class="side-borders" rowspan="2">
-                  <ul>
-                    <li>Chapter 11 (Hastie et al.)</li>
-                    <li>Chapter 1-3 <a href="http://neuralnetworksanddeeplearning.com/index.html">(Nielsen)</a></li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Homework 4 (due 11/3)</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td>17</td>
-                <td>10/24</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>18</td>
-                <td>10/26</td>
-                <td class="side-borders">K Nearest Neighbors</td>
-                <td class="side-borders">
-                  <ul>
-                    <li>Chapter 13 (Hastie et al.)</li>
-                  </ul>
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td align="center" colspan="6" class="plan-sec-header">Unsupervised Learning</td>
-              </tr>
-              <tr>
-                <td>19</td>
-                <td>10/31</td>
-                <td class="side-borders">Dimensionality Reduction</td>
-                <td class="side-borders" rowspan="2">
-                  <ul>
-                    <li>Chapter 14 (Hastie et al.)</li>
-                    <li>Chapter 23 - 23.1 <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/index.html">(Shalev-Shwartz &amp; Ben-David)</a></li>
-                    <li><a href="http://cs229.stanford.edu/notes/cs229-notes10.pdf">PCA notes</a> from Stanford's ML class</li>
-                  </ul>
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>20</td>
-                <td>11/2</td>
-                <td class="side-borders">Clustering &amp; Mixture Models</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td align="center" colspan="6" class="plan-sec-header">Midterm</td>
-              </tr>
-              <tr>
-                <td>21</td>
-                <td>11/7</td>
-                <td class="side-borders">Midterm</td>
-                <td class="side-borders"></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>22</td>
-                <td>11/9</td>
-                <td class="side-borders">Project Madness &amp; TBD</td>
-                <td class="side-borders"></td>
-                <td>
-                 <ul>
-                    <li>Homework 5 (due 12/1)</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" colspan="6" class="plan-sec-header">Other Topics</td>
-              </tr>
-              <tr>
-                <td>23</td>
-                <td>11/14</td>
-                <td class="side-borders">Hidden Markov Models</td>
-                <td class="side-borders">
-                  <ul>
-                    <li>Murphy's <a href="http://www.cs.ubc.ca/~murphyk/Papers/intro_gm.pdf">intro to graphical models</a></li>
-                    <li><a href="http://digital.cs.usu.edu/~cyan/CS7960/hmm-tutorial.pdf">HMM tutorial</a> by Blunsom</li>
-                  </ul>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>24</td>
-                  <td>11/16</td>
-                  <td class="side-borders" rowspan=2>Deep Learning</td>
-                  <td class="side-borders" rowspan=2></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>25</td>
-                  <td>11/21</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>26</td>
-                  <td>11/28</td>
-                  <td class="side-borders">Topic Models</td>
-                  <td class="side-borders">
-                    <ul>
-                      <li>Blei's <a href="http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf">review article</a></li>
-                    </ul>
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>27</td>
-                  <td>11/30</td>
-                  <td class="side-borders">Recommendation Systems</td>
-                  <td class="side-borders"><ul>
-                    <li>Chapter 9 (<a href="http://infolab.stanford.edu/~ullman/mmds/ch9.pdf">Leskovec et al.</a>)</li>
-                    <li><a href="http://ieeexplore.ieee.org/document/5197422">Paper</a> by Koren et al.</li>
-                  </ul>
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td align="center" colspan="6" class="plan-sec-header">Project Presentations</td>
-              </tr>
-              <tr>
-                <td>28</td>
-                <td>12/5</td>
-                <td class="side-borders" rowspan="2">Presentations</td>
-                <td class="side-borders" rowspan="2"></td>
-              </tr>
-              <tr>
-                <td>29</td>
-                <td>12/7</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+                  <td>1/24</td>
+                  <td class="side-borders">Relational Algebra</td>
+                  <td class="side-borders" rowspan="2" valign="center">
+                    <a href="slide/5-6-rel-alg-calc.pdf">Lectures 5-6</a></td>
+                    <td class="side-borders" rowspan="2">Chapter 8</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>1/26</td>
+                    <td class="side-borders">Relational Algebra &amp; Calculus</td>
+                    <td>
+                      <ul>
+                        <li><a href="assignment/homework-2.pdf">Homework 2</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>1/31</td>
+                    <td class="side-borders">SQL: Introduction &amp; Schema Definitions</td>
+                    <td class="side-borders">
+                      <a href="slide/7-sql-intro.pdf">Lecture 7</a><br><br>
+                      SQL Scripts:<br>
+                      <a href="script/create-companydb-mysql.sql">Create Company DB (MySQL)</a><br>
+                      <a href="script/insert-companydb-mysql.sql">Insert Company DB (MySQL)</a><br>
+                    </td>
+                    <td class="side-borders">Chapter 6</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>2/2</td>
+                    <td rowspan="3" class="side-borders">SQL: Querying</td>
+                    <td class="side-borders" rowspan="3" valign="center">
+                      <a href="slide/8-9-sql.pdf">Lectures 8-9</a><br>
+                      <a href="slide/hw1-mysql.pdf">Homework 1 &amp; MySQL Notes</a><br><br>
+                      SQL Scripts:<br>
+                      <a href="script/company-ex-1.sql">Exercises 1 (MySQL)</a><br>
+                      <a href="script/company-ex-2.sql">Exercises 2 (MySQL)</a><br>
+                      <a href="script/company-ex-3.sql">Exercises 3 (MySQL)</a><br>
+                      <a href="script/company-ex-4.sql">Exercises 4 (MySQL)</a>
+                    </td>
+                    <td class="side-borders" rowspan="6">Chapters 6, 7</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>2/7</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>2/9</td>
+                    <td>
+                      <ul>
+                        <li><a href="assignment/proj-1.pdf">Project 1</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>2/14</td>
+                    <td class="side-borders" rowspan="3">SQL: Advanced Queries</td>
+                    <td class="side-borders" rowspan="3">
+                      <a href="slide/10-11-adv-sql.pdf">Lectures 11-12</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>2/16</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>2/21</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="6" class="plan-sec-header">Database Design &amp; Normal Forms</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>2/23</td>
+                    <td class="side-borders">Database Design</td>
+                    <td class="side-borders">
+                      <a href="slide/13-14-db-design.pdf">Lectures 13-14</a>
+                    </td>
+                    <td class="side-borders">Chapters 14, 15</td>
+                    <td>
+                      <ul>
+                        <li><a href="assignment/proj-2.pdf">Project 2</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="6" class="plan-sec-header">Midterm</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>2/28</td>
+                    <td class="side-borders">Midterm Review</td>
+                    <td class="side-borders">
+                      <a href="slide/15-mt-review.pdf">Lecture 15</a>
+                    </td>
+                    <td class="side-borders"></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>3/2</td>
+                    <td class="side-borders">Midterm </td>
+                    <td class="side-borders"></td>
+                    <td class="side-borders"></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="6" class="plan-sec-header">Database Design &amp; Normal Forms, Continued</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>3/14</td>
+                    <td class="side-borders">Database Design, Continued</a></td>
+                    <td class="side-borders">
+                      <a href="slide/13-14-db-design.pdf">Lecture 14-17</a><br>
+                      <a href="slide/midterm-db-review.pdf">Midterm Results</a>
+                    </td>
+                    <td class="side-borders">Chapters 14, 15 </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="6" class="plan-sec-header">Database Application Programming</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>3/16</td>
+                    <td class="side-borders">JDBC (Java / SQL Programming) &amp; PHP (Web Programming)</td>
+                    <td class="side-borders">
+                      <a href="slide/18-jdbc-php.pdf">Lecture 18</a><br>
+                      <a href="script/Employee-JDBC.zip">Employee-JDBC.zip</a><br>
+                      <a href="script/php-examples.zip">php-examples.zip</a>
+                    </td>
+                    <td class="side-borders">Chapter 10, 11</td>
+                    <td>
+                      <ul>
+                        <li><a href="assignment/homework-3.pdf">Homework 3</a></li>
+                      </ul></td>
+                    </tr>
+                    <tr>
+                      <td align="center" colspan="6" class="plan-sec-header">Introduction to Database Internals</td>
+                    </tr>
+                    <tr>
+                      <td>19</td>
+                      <td>3/21</td>
+                      <td class="side-borders">Data Storage, IO Models, and External Sort</td>
+                      <td class="side-borders">
+                        <a href="slide/19-storage.pdf">Lecture 19</a>
+                      </td>
+                      <td class="side-borders">Chapter 16</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>20</td>
+                      <td>3/23</td>
+                      <td class="side-borders" rowspan="2">Indexing</td>
+                      <td class="side-borders" rowspan="2">
+                        <a href="slide/20-21-index.pdf">Lectures 20-21</a><br>
+                        <a href="script/imdb-index-example.sql">IMDB Index Example</a>
+                      </td>
+                      <td class="side-borders" rowspan="2">Chapters 16, 17</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>21</td>
+                      <td>3/28</td>
+                      <td>
+                        <ul>
+                          <li><a href="assignment/proj-3.pdf">Project 3</a></li>
+                          <li><a href="assignment/courses.csv">courses.csv</a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>22</td>
+                      <td>3/30</td>
+                      <td class="side-borders" rowspan="2">Query Processing &amp; Optimization</td>
+                      <td class="side-borders" rowspan="2">
+                        <a href="slide/22-23-query-opt.pdf">Lectures 22-23</a><br>
+                        <a href="slide/proj2-update.pdf">Project 2 Grades</a>
+                      </td>
+                      <td class="side-borders" rowspan="2">Chapters 18, 19</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>23</td>
+                      <td>4/4</td>
+                      <td>
+                        <ul>
+                          <li><a href="assignment/proj-4.pdf">Project 4</a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>24</td>
+                      <td>4/6</td>
+                      <td class="side-borders" rowspan="2">Transaction Management &amp; Concurrency Control</td>
+                      <td class="side-borders" rowspan="2">
+                        <a href="slide/24-25-transaction.pdf">Lectures 24-25</a><br>
+                        <a href="slide/hw3-update.pdf">Homework 3 Results</a>
+                      </td>
+                      <td class="side-borders" rowspan="2">Chapters 20, 21</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>25</td>
+                      <td>4/11</td>
+                      <td>
+                        <ul>
+                          <li><a href="assignment/homework-4.pdf">Homework 4</a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" colspan="6" class="plan-sec-header">Introduction to Modern Databases</td>
+                    </tr>
+                    <tr>
+                      <td>26</td>
+                      <td>4/13</td>
+                      <td class="side-borders">Big Data Systems</td>
+                      <td class="side-borders">
+                        <a href="slide/26-big-data.pdf">Lecure 26</a>
+                      </td>
+                      <td class="side-borders">Chapters 23, 25</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>27</td>
+                      <td>4/18</td>
+                      <td class="side-borders">NoSQL</td>
+                      <td class="side-borders">
+                        <a href="slide/27-nosql.pdf">Lecture 27</a><br>
+                        <a href="script/mongo-example.js">mongo-example.js</a>
+                      </td>
+                      <td class="side-borders">Chapter 24</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td align="center" colspan="6" class="plan-sec-header">Final</td>
+                    </tr>
+                    <tr>
+                      <td>28</td>
+                      <td>4/20</td>
+                      <td class="side-borders">Review</td>
+                      <td class="side-borders">
+                        <a href="slide/28-final-review.pdf">Lecture 28</a>
+                      </td>
+                      <td class="side-borders"></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
       <div class="row">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">Course Logistics</h3><a name="logistic"></a>
           </div>
           <div class="panel-body">
-            <h4>Piazza</h4>
-            <p>All announcements, assignment clarifications, and slide corrections will be posted on Piazza. Make sure to check the site on a regular basis.</p>
-            <h4>Office Hours</h4>
-            <p><b>Joyce Ho</b>: M 1:30 PM - 3:30 PM, W 9:30 AM - 12:00 PM @ MSC W414<br>
-            <i>Note: Office hours may change from time to time, in which case an announcement will be made on Piazza</i>.
+            <h4>Lectures</h4>
+              <p>Wed + Fri, 2:30-3:45PM</p>
+              <p>Slides will be posted on the course web site (https://adelaneh.github.io/cs564_fall17)</p>
+            <h4>Discussion</h4>
+              <p>Mon, 2:30-3:45PM</p>
+              <b>IMPORTANT</b>:Do not take the class if you cannot attend the discussion!
+            <h4>Project</h4>
+              <p>You'll do your projects in groups of 3-4 people. It has multiple stages and you submit some work at the end of each stage. You might have a final demo, time permitting.</p>
+            <h4>Exams</h4>
+              <p>This course has a midterm and a final exam. You may find your exam dates and locations on this page.</p>
+            <h4>Course Staff</h4>
+              <p>
+                <ul>
+                  <li><b>Lecturer</b>: Adel Ardalan <b>Office hours</b>: Wed+Fri, 3:45-4:45PM (right after class) in class or my office (room 4351)</li>
+                  <li><b>TA</b>: MRSTA <b>Office hours</b>: When and where</li>
+                </ul>
+              </p>
+            <h4>Communication</h4>
+              <p>
+                <ul>
+                  <li>Course web site: All the logistics information, lecture slides, up-to-date announcements and deadlines, and more! Check the web site at least once a week.</li>
+                  <li>Mailing list: lldkkdkkk</li>
+                  <li>Piazza: ldlfkjlkjsldkfbl</li>
+                </ul>
+              </p>
             <h4>Textbook</h4>
             <ul>
-              <li>Required: <i>The Elements of Statistical Learning: Data Mining, Inference, and Prediction)</i>, by Trevor Hastie, Robert Tibshirani &amp; Jerome Friedman</li>
-              <li>Supplemental: <i>Machine Learning: a Probabilistic Perspective</i>, by Kevin Murphy</li>
-              <li>Supplemental: <i>Pattern Recognition and Machine Learning</i>, by Christopher Bishop</li>
-              <ul>
-              </div>
-            </div>
+              <li><i>Database Management Systems, 3rd edition (the cow book)</i>, by R. Ramakrishnan and J. Gehrke</li>
+              <li><i>Fundamentals of Database Systems, 7th dition</i>, by R. Elmasri and S. B. Navathe</li>
+              <li><i>Database Systems: The Complete Book, 2nd Edition</i>, by H. Garcia-Molina, J. D. Ullman and J. Widom</li>
+            </ul>
           </div>
-          <br>
+        </div>
+      </div>
+      <br>
           <div class="row">
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -405,10 +434,9 @@
                     <table class="table">
                       <thead><tr><th>Component</th><th>Weight</th></tr></thead>
                       <tbody>
-                        <tr><td>Homeworks</td><td>35.0%</td></tr>
-                        <tr><td>Midterm</td><td>17.5%</td></tr>
-                        <tr><td>Project</td><td>40.0%</td></tr>
-                        <tr><td>Participation</td><td>&nbsp; 7.5%</td></tr>
+                        <tr><td>Project</td><td>40% (4 stages, 10% each)</td></tr>
+                        <tr><td>Midterm Exam</td><td>25%</td></tr>
+                        <tr><td>Final Exam</td><td>&nbsp; 35%</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -423,65 +451,10 @@
                 <h3 class="panel-title">Project</h3><a name="project"></a>
               </div>
               <div class="panel-body">
-                <p>
-                  You are encouraged to work in groups of 2-3 for the term project to analyze a real-world dataset. The goal is to either develop a novel algorithm (novelty bonus points will be given depending on the level of difficulty) or try various ML existing algorithms on the dataset. The project is a critical part of the course and a significant factor in determining your grade. Teams are required to hand in a project proposal, a final project report and prepare two presentations on their work.
-                </p>
-                <p>
-                By default, all team members will receive the same score for their project. If a team feels that this is unfair perhaps due to HIGHLY imbalanced contributions, then every team member needs to provide feedback on the contribution of each of the other team members via email before submission of the final report. After that I will need to have a meeting with all the members together to mediate.
-                </p>
-                <p>
-                More details on projects are posted on Piazza under the projects folder.</p>
-                </p>
-                <div class="row">
-                  <div class="col-sm-offset-2 col-sm-8">
-                    <table class="table">
-                      <thead><tr><th>Component</th><th>Due Date</th><th>Weight</th></tr></thead>
-                      <tbody>
-                        <tr><td>Proposal</td><td>10/25</td><td>15%</td></tr>
-                        <tr><td>Madness</td><td>11/9 (in class)</td><td>10%</td></tr>
-                        <tr><td>Presentation</td><td>12/5-12/7 (in class)</td><td>25%</td></tr>
-                        <tr><td>Report</td><td>12/12</td><td>50%</td></tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+                <p>TBA</p>
               </div>
             </div>
           </div>
           <br>
-          <div class="row">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Homework &amp; Exam Policies</h3><a name="late"></a>
-              </div>
-              <div class="panel-body">
-                <h4>Homework:</h4>
-                <ul>
-                  <li>Homework is due electronically on Gradescope/Canvas at 11:59 PM.</li>
-                  <li>Each student receives <b>6</b> late days that can be used across the 5 homeworks throughout the semester. These late days extend the deadline for 24 hours.</li>
-                  <li>A maximum of <b>3</b> late days can be used on a given homework.</li>
-                  <li>Late days apply to the entire homework, so handing in one problem late counts as a late day towards the whole homework.</li>
-                  <li><b>No credit</b> will be given if you submit the homework late and have run out of late days.</li>
-                </ul>
-                <h4>Exam:</h4>
-                <ul>
-                  <li>The midterm must be taken at the required time.</li>
-                  <li>Requests for rescheduling the midterm exam will only be considered if the request is made at least a week prior to the exam date.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Honor Code</h3><a name="honor"></a>
-              </div>
-              <div class="panel-body">
-                <p>All class work is governed by the College Honor Code and Departmental Policy. It is acceptable and encouraged to discuss homeworks with other students. However, this should be noted on your submitted homework and all code and writeup must be written by yourself. Any code and writeup that is found to be similar is grounds for an honor code investigation by the Director of Gradute Studies, Laney Graduate School, and the honor council.
-                </div>
-              </div>
-            </div>
-          </div>
         </body>
       </html>
